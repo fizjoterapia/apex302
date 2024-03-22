@@ -23,7 +23,7 @@
 
         <div>
             <h4 class="mb-3">Your contact data</h4>
-            <form class="needs-validation" novalidate method="POST" action="https://api.web3forms.com/submit">
+            <form id="reg-form" class="needs-validation" novalidate method="POST" action="https://api.web3forms.com/submit">
                 <input type="hidden" name="access_key" value="ac38bcdc-3a96-4589-8f05-09dd0d94674b" />
                 <input type="hidden" name="redirect" value="https://fizjoterapia.uk/forms/success.html">
                 <input type="hidden" name="subject" value="New Patient Registration">
@@ -177,7 +177,7 @@
 <script src="form-validation.js"></script>
 <script>
     window.onload = function() {
-        document.getElementById("form").reset();
+        document.getElementById("reg-form").reset();
     };
 </script>
 </body>
