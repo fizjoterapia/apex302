@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Physio Effect JB Ltd</title>
+    <style>
+        :root {
+            --primary-color: #0284c7; /* Professional medical blue */
+            --primary-light: #e0f2fe;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            width: 90%;
+            border-top: 6px solid var(--primary-color);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .error-code {
+            font-size: 5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .pun-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            color: var(--text-main);
+        }
+
+        .description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .infrastructure-note {
+            background-color: var(--primary-light);
+            border-radius: 8px;
+            padding: 1rem;
+            font-size: 0.875rem;
+            color: var(--primary-color);
+            text-align: left;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .infrastructure-note strong {
+            display: block;
+            margin-bottom: 0.25rem;
+            color: #0369a1;
+        }
+
+        .logo-text {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Subtle pulse animation for the 404 to mimic a heartbeat/breathing */
+        .error-code {
+            animation: pulse 4s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <div class="pun-title">This page is out of alignment.</div>
+        
+        <p class="description">
+            It looks like the link you followed pulled a hamstring. Don't worry, we specialize in fixing things that are out of place, but the page you are looking for isn't here.
+        </p>
+
+        <div class="infrastructure-note">
+            <strong>System Notice:</strong>
+            You have reached the secure routing domain for fizjoterapia.uk. This specific address operates as a headless endpoint for encrypted communications and infrastructure, and does not serve human-facing web content.
+        </div>
+
+        <div class="logo-text">
+            Physio Effect JB Ltd
+        </div>
+    </div>
+
+</body>
+</html>
